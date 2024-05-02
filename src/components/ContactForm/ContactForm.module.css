@@ -1,0 +1,24 @@
+form{
+    padding: 19px;
+    border: 1px solid black;
+    width: 60%;
+    margin: 20px;
+}
+.formList{
+    display: flex;
+    flex-direction: column;
+}
+.formLabel{
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.formField{
+    padding: 5px;
+}
+.formikMes{
+    color: red;
+}
+button{
+    margin-top: 10px;
+}
