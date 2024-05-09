@@ -37,7 +37,7 @@ const authSlice = createSlice({
         .addCase(getCurrentUser.pending, (state) => {
             state.loading = true;
             state.error = false;
-            state.isRefreshing = true;
+            state.isRefreshing = false;
         })
         .addCase(getCurrentUser.fulfilled, (state, action) => {
             state.loading = false;

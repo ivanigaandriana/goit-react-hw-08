@@ -45,9 +45,11 @@ export const getCurrentUser = createAsyncThunk(
             const token= state.auth.token;
             setToken(token);
             const data = await apiGetInfoUser();
+            console.log(data);
             return data;
         }catch(error){
             return thunkAPI.rejectWithValue(error.message);
+            console.log(error);
         }
     }
 )
