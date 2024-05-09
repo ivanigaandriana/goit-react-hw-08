@@ -8,11 +8,11 @@ import {getCurrentUser} from './redux/auth/operations';
 import { selectIsRef } from './redux/auth/selectors';
 import { useDispatch, useSelector } from 'react-redux';
 import './app.css';
- const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
- const RegisterPage = lazy(() => import('../pages/RegistrationPage/RegistrationPage'));
-const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
-const LoginPage = lazy(() => import('../pages/LoginPage/LoginPage'));
-const ContactsPage = lazy(() => import('../pages/ContactsPage/ContactsPage'));
+ const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
+ const RegisterPage = lazy(() => import('./pages/RegistrationPage/RegistrationPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
+const LoginPage = lazy(() => import('./pages/LoginPage/LoginPage'));
+const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
 
 function App() {
   const dispatch = useDispatch();
